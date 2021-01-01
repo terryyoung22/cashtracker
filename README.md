@@ -9,6 +9,9 @@ This app is to help track purchases of what you have made. Currently it makes PO
     * `node index.js` - use only
     * `nodemon start` - If you want to make live modification to the app
 * should output  `server is running on port 3000`
+ ### Container use
+    * `docker build -t <yourContainerImageName> .
+    * `run -dit --name <nameForContainer> -p 3000:3000 <yourContainerImageName>`
 
 ## Plans
 * For cash tracking, have you set a budge before hosting or ask for it on creation and then have purchases subtract on input
