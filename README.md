@@ -3,7 +3,7 @@
 ## Purpose
 This app is to help track purchases of what you have made. Currently it makes POST to the page of however you choose to input and track your spending, or you can modify this to become a todo list or whatever else you want
 
-## Install
+## Install and Run
 * Run `npm install` on the root of the directory for dependencies
 * Then to start the app:
     * `node index.js` - use only
