@@ -1,0 +1,41 @@
+<html>
+<head> 
+<title> Cash Tracker </title>
+ <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+ <link href="/styles.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+<h2> Cash Tracker </h2>
+
+<form action ="/addcharge" method="POST">
+
+<input type="text" name="newcharge" placeholder="">
+<button> Charge it! </button>
+
+
+<h2> Charges </h2>
+
+<% for( var i = 0; i < charge.length; i++){ %>
+    <li><input type="checkbox" name="check" value="<%= charge[i] %>" /> <%= charge[i] %> </li>
+<% } %>
+
+<button formaction="/removecharge" type="submit" id="top"> Remove </button>
+</form>
+
+<h2> Removed Charges </h2>
+
+ <% for(var i = 0; i < complete.length; i++){ %>
+    <li><input type="checkbox" checked><%= complete[i] %> </li>
+<% } %>
+
+<!-- <h2>Start Fresh!</h2>
+Remove all from the list:
+<button onclick="location.href = '/index.ejs';" id="myButton" class="float-left submit-button" >Home</button> -->
+
+
+</div>
+
+</body>
+</html>
