@@ -18,3 +18,6 @@ This app is to help track purchases of what you have made. Currently it makes PO
 * For cash tracking, have you set a budge before hosting or ask for it on creation and then have purchases subtract on input
 * Create multiple page app so you dont ahve to adjust code to use todo list or cash tracking app
 * Better styling
+
+## Sources
+- [ECS TF](https://appychip.com/automate-ecs-fargate-cluster-creation-using-terraform/)
