@@ -38,7 +38,7 @@ jobs:
         ECR_REPOSITORY: terrysapps
         IMAGE_TAG: cashtracker
       run: |
-        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG ./ReactApp
+        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
     - name: Logout of Amazon ECR
