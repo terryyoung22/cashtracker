@@ -6,6 +6,7 @@ var bodyParser = require("body-parser");
 var app = express();
 var charge = ["charge 1", "charge 2"]; //placeholders for added charge
 var complete = ["Removed charge"]; //placeholders for removed charge
+var values = ["55"];
 
 /////////////////////////////////////////////////////
 // app.use/app.get section///////////////////////////
@@ -39,6 +40,7 @@ app.post("/removecharge", function(req, res) {
     }
     res.redirect("/");
 });
+
 
 /////////////////////////////////////////////////////
 // App.get section///////////////////////////////////
